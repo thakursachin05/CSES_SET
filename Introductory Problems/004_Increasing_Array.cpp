@@ -16,6 +16,7 @@ void solve(){
 
         if(arr[i]<minEle){
             diff += minEle-arr[i];
+            arr[i] = minEle;
         }
         minEle = arr[i];
 
