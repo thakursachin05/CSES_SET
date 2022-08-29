@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
-#define int long long
 using namespace std;
+typedef long long ll;
+typedef vector<int> vi;
+typedef pair<int,int> pi;
+#define first F
+#define second S
+#define push_back PB
+#define make_pair MP
+#define rep(i,a,b) for(int i=a;i<b;i++)
 
 void solve(){
   
