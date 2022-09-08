@@ -10,8 +10,20 @@ typedef pair<int,int> pi;
 #define rep(i,a,b) for(int i=a;i<b;i++)
 #define rev(i,a,b) for(int i=a;i>=b;i--)
 #define mod 1000000007
-ll n,x,y,k;
+ll n,m,x,y,k;
 
+ll powEx(ll x,ll y){
+    x %= mod;
+    ll ans = 1;
+    while(y > 0){
+        if(y&1){
+            (ans *= x)%=mod;
+        }
+        y = y>>1;
+        (x *= x)%=mod;
+    }
+    return ans;
+}
 
   
 void solve(){ 
